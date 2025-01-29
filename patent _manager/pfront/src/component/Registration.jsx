@@ -39,7 +39,7 @@ function App() {
     return;
   }
 
-  const response = await fetch('http://localhost:5001/api/patent', {
+  const response = await fetch('https://patent-manager-final.onrender.com/api/patent', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
