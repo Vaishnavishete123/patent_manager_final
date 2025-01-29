@@ -14,7 +14,7 @@ const PatentList = () => {
 
   useEffect(() => {
     // Fetch patents from your API endpoint
-    fetch('http://localhost:5001/api/patents')
+    fetch('https://patent-manager-final.onrender.com/api/patents')
       .then((response) => response.json())
       .then((data) => setPatents(data))
       .catch((error) => console.error('Error fetching patents:', error));
@@ -23,7 +23,7 @@ const PatentList = () => {
 
   const handleDeletePatent = async (patentNumber) => {
     try {
-      const response = await fetch(`http://localhost:5001/api/patents/${patentNumber}/${username}`, {
+      const response = await fetch(`https://patent-manager-final.onrender.com/api/patents/${patentNumber}/${username}`, {
         method: 'DELETE'
       });
 
