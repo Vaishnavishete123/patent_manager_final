@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Connection
-mongoose.connect("mongodb://localhost:27017/mydatabase", {
+mongoose.connect("mongodb+srv://pglocker:pglocker@cluster0.uohhsxz.mongodb.net/myDatabase?retryWrites=true&w=majority&appName=Cluster0", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
